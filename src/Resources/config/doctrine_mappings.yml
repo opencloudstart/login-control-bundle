@@ -1,0 +1,9 @@
+doctrine:
+  orm:
+    mappings:
+      domain_model.login_control:
+        mapping:   true
+        type:      'annotation'
+        dir:       '%kernel.root_dir%/../vendor/wbdcorp/login-control-bundle/src'
+        prefix:    'LoginControl'
+        is_bundle: false

@@ -1,0 +1,30 @@
+{
+    "name": "ocs/login-control-bundle",
+    "description": "Quickly allows you to add two factor authentication to applications with simple password security already enabled and setup.",
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Gregory Neely",
+            "email": "greg@opencloudstart.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.2",
+        "symfony/security-bundle": "^4.2",
+        "symfony/http-client": "^4",
+        "pragmarx/google2fa": "^8",
+        "bacon/bacon-qr-code": "^2"
+    },
+    "autoload": {
+        "psr-4": {
+            "OCS\\LoginControlBundle\\": "src/"
+        }
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../LoginControlBundle"
+        }
+    ]
+}
